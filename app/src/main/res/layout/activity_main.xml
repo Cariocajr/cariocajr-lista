@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text="LISTA DE TAREFAS"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:fontFamily="@font/josefin_sans_bold"/>
+
+    <EditText
+        android:id="@+id/Tarefa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Adicione a tarefa"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:textSize="22sp"
+        android:fontFamily="@font/josefin_sans"/>
+
+    <EditText
+        android:id="@+id/Descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="descrição da tarefa"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/white"
+        android:textSize="22sp"
+        android:fontFamily="@font/josefin_sans"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/Adicionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="Adicionar"
+            android:textAllCaps="false" />
+        
+        <Button
+            android:id="@+id/Visualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Visualizar"
+            android:textAllCaps="false"
+            android:fontFamily="@font/josefin_sans_bold"/>
+
+        <Button
+            android:id="@+id/Atualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Atualizar"
+            android:textAllCaps="false"
+            android:fontFamily="@font/josefin_sans_bold"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgv_carioca"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/marca2" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
